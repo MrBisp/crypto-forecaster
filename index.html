@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto forecaster</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="mainContainer">
+    <h1>
+        Crypto forecast
+    </h1>
+    <i>Estimate how your crypto holdings will grow</i>
+    <form id="coinForm">
+
+        <h3>Convert coin to fiat</h3>
+        <label>Which cryptocurrency do you own?</label>
+        <select id="coinSelect">
+        </select><br>
+        <label>How many do you own? </label>
+        <input id="amount" value="1" type="number" step="0.00000001" placeholder="amount"><br>
+        <label>Show prices in fiat:</label>
+        <select id="fiatSelect">
+            <option value="USD">USD</option>
+        </select><br>
+        <div id="output"></div>
+
+        <hr>
+        <h3>How much is it worth in a few years?</h3>
+        <label>Percentage change each year (automatically showing the arithmetic average growth of the selected coin)</label>
+        <input id="percentageInput" value="10" type="number" placeholder="Percentage change" step="0.000000000000001"><br>
+        <label>Years in the future</label>
+        <input id="yearsInFuture" value="10" type="number" step="1"><br>
+
+        <label id="stakingRewardsLabel">Staking rewards (percentage)</label>
+        <input id="stakingRewards" value="0" type="number" step="0.01" >
+
+        <table id="forecastTable">
+            <tr>
+                <th>Year</th>
+                <th>Price</th>
+                <th>Amount</th>
+                <th>Value of holdings</th>
+                <th>Market cap</th>
+            </tr>
+        </table>
+    </form>
+
+</div>
+<div id="messageContainer">
+
+</div>
+
+</body>
+</html>

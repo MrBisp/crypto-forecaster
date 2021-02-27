@@ -1,0 +1,105 @@
+* {
+    font-family: sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+label, i, input, input::placeholder{
+    font-weight: 500;
+}
+table{
+    width: 100%;
+}
+table td, table th{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0 4px;
+}
+table td:first-child, table th:first-child{
+    display: inline-block;
+    width: 50px;
+}
+
+#mainContainer{
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 24px;
+    text-align: left;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+}
+input, select{
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+textarea, select, input, button { outline: none; }
+
+/* Per default, hide staking rewards */
+#stakingRewards, #stakingRewardsLabel{
+    display: none;
+}
+
+
+#messageContainer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+#messageContainer span{
+    width: 100%;
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 12px 24px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
